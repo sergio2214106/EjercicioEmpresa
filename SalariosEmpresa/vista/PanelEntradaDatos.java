@@ -54,6 +54,9 @@ public class PanelEntradaDatos extends JPanel
         lbAntiguedad.setBounds(140,70,160,20);
         add(lbAntiguedad);
 
+        lbHoras = new JLabel("Horas Trabajadas= ");
+        lbHoras.setBounds(140,100,160,20);
+        add(lbHoras);
 
 
         
@@ -70,6 +73,10 @@ public class PanelEntradaDatos extends JPanel
         tfAntiguedad = new JTextField("");
         tfAntiguedad.setBounds(300, 70, 60, 20);
         add(tfAntiguedad);
+
+        tfHoras = new JTextField("");
+        tfHoras.setBounds(300, 100, 60, 20);
+        add(tfHoras);
         
         //Borde y titulo del panel
         TitledBorder borde = BorderFactory.createTitledBorder("Datos de Entrada");
@@ -78,19 +85,23 @@ public class PanelEntradaDatos extends JPanel
     }
     
     //Metodos de acceso a la información de las cajas de texto
-    public String getNombre()
+    public String gettfNombre()
     {
         return tfNombre.getText();
     }
     
-    public String getEdad()
+    public String gettfEdad()
     {
         return tfEdad.getText();
     }
     
-    public String getAntiguedad()
+    public String gettfAntiguedad()
     {
         return tfAntiguedad.getText();
+    }
+    public String gettfHoras()
+    {
+        return tfHoras.getText();
     }
     
     //Metodo para borrar cajas de texto
@@ -99,5 +110,6 @@ public class PanelEntradaDatos extends JPanel
         tfEdad.setText("");
         tfNombre.setText("");
         tfAntiguedad.setText("");
+        tfHoras.setText("");
     }
 }

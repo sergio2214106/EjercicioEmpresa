@@ -9,7 +9,7 @@ public class test
     public static void main(String[] args)
     {
         VentanaPrincipal miVentana = new VentanaPrincipal();
-        Empresa miCarro = null;
-        Controlador miControlador = new Controlador(miVentana, miCarro);
+        Empresa empresa = new Empresa("",0,0);
+        Controlador miControlador = new Controlador(miVentana, empresa );
     }
 }
