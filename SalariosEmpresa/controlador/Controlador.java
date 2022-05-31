@@ -59,6 +59,9 @@ public class Controlador implements ActionListener
             model.PagarCantidad();
             venPrin.miPanelResultado.mostrarResultado("Valor a pagar salario: " + model.getHoras() + "\n Valor pagar auxilio de transporte= " + model.getvalorAuxilio());
         }
-        
+        if(comando.equals("salir"))
+        {
+            System.exit(0);
+        }
     }    
 }

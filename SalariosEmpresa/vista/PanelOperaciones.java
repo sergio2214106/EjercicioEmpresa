@@ -45,11 +45,11 @@ public class PanelOperaciones extends JPanel
         add(bRegistrar);
         bRegistrar.setActionCommand("registrar");
         
-        bAcelerar = new JButton("Hallar");
+        bAcelerar = new JButton("Salir");
         bAcelerar.setFont(new Font("Arial", BOLD, 12));
         bAcelerar.setBounds(200,20,90,20);
         add(bAcelerar);
-        bAcelerar.setActionCommand("hallar");
+        bAcelerar.setActionCommand("salirr");
         
         
         //Borde y titulo del panel
